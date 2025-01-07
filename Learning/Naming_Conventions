@@ -1,0 +1,6 @@
+* Variable and function names written as camelCase
+* Global variables written in UPPERCASE 
+* Constants (like PI) written in UPPERCASE
+* Hyphens are not allowed in JavaScript names.
+* Do not start names with a $ sign. It will put you in conflict with many JavaScript library names.
+* In JavaScript, a common naming convention is to use camelCase for variables and functions (e.g., 'myVariableName'), PascalCase for classes and constructors (e.g., 'MyClassName'), and UPPER_SNAKE_CASE for constants (e.g., 'MY_CONSTANT').
