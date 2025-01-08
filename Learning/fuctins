@@ -1,0 +1,220 @@
+JavaScript Functions
+A JavaScript function is a block of code designed to perform a particular task.
+
+A JavaScript function is executed when "something" invokes it (calls it).
+
+Example
+// Function to compute the product of p1 and p2
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+
+function name(parameter1, parameter2, parameter3) {
+    // code to be executed
+  }
+
+  <!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Functions</h1>
+
+<p>Call a function which performs a calculation and returns the result:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = myFunction(4, 3);
+document.getElementById("demo").innerHTML = x;
+
+function myFunction(a, b) {
+  return a * b;
+}
+</script>
+
+</body>
+</html>
+
+
+JavaScript Strings
+let text = "John Doe";
+
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'";
+let answer3 = 'He is called "Johnny"';
+
+let text = `He's often called "Johnny"`;
+
+String Length
+To find the length of a string, use the built-in length property:
+
+Example
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;
+
+Examples
+\" inserts a double quote in a string:
+
+
+let text = "We are the so-called \"Vikings\" from the north.";
+
+let text= 'It\'s alright.';
+
+let text = "The character \\ is called backslash.";
+
+let x = "John";
+let y = new String("John");
+
+
+
+JavaScript String Length
+The length property returns the length of a string:
+
+Example
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;
+
+
+Extracting String Characters
+There are 4 methods for extracting string characters:
+
+The at(position) Method
+The charAt(position) Method
+The charCodeAt(position) Method
+Using property access [] like in arrays
+JavaScript String charAt()
+The charAt() method returns the character at a specified index (position) in a string:
+
+Example
+let text = "HELLO WORLD";
+let char = text.charAt(0);
+
+
+JavaScript String charCodeAt()
+The charCodeAt() method returns the code of the character at a specified index in a string:
+
+The method returns a UTF-16 code (an integer between 0 and 65535).
+
+Example
+let text = "HELLO WORLD";
+let char = text.charCodeAt(0);
+
+const name = "W3Schools";
+let letter = name.at(2);
+
+const name = "W3Schools";
+let letter = name[2];
+
+Extracting String Parts
+There are 3 methods for extracting a part of a string:
+
+slice(start, end)
+substring(start, end)
+substr(start, length)
+JavaScript String slice()
+slice() extracts a part of a string and returns the extracted part in a new string.
+
+The method takes 2 parameters: start position, and end position (end not included).
+
+Example
+Slice out a portion of a string from position 7 to position 13:
+
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7, 13);
+
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7);
+
+f a parameter is negative, the position is counted from the end of the string:
+
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(-12);
+
+This example slices out a portion of a string from position -12 to position -6:
+
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(-12, -6);
+
+JavaScript String substring()
+substring() is similar to slice().
+
+The difference is that start and end values less than 0 are treated as 0 in substring().
+
+Example
+let str = "Apple, Banana, Kiwi";
+let part = str.substring(7, 13);
+
+JavaScript String substr()
+substr() is similar to slice().
+
+The difference is that the second parameter specifies the length of the extracted part.
+
+Example
+let str = "Apple, Banana, Kiwi";
+let part = str.substr(7, 6);
+
+
+If you omit the second parameter, substr() will slice out the rest of the string.
+
+Example
+let str = "Apple, Banana, Kiwi";
+let part = str.substr(7);
+
+If the first parameter is negative, the position counts from the end of the string.
+
+Example
+let str = "Apple, Banana, Kiwi";
+let part = str.substr(-4);
+
+let text1 = "Hello World!";
+let text2 = text1.toUpperCase();
+
+let text1 = "Hello World!";       // String
+let text2 = text1.toLowerCase();
+
+let text1 = "Hello";
+let text2 = "World";
+let text3 = text1.concat(" ", text2);
+
+text = "Hello" + " " + "World!";
+text = "Hello".concat(" ", "World!");
+
+let text1 = "      Hello World!      ";
+let text2 = text1.trim();
+
+JavaScript Arrays
+
+An array is a special variable, which can hold more than one value:
+
+const cars = ["Saab", "Volvo", "BMW"];
+
+const array_name = [item1, item2, ...];  
+
+const cars = [];
+cars[0]= "Saab";
+cars[1]= "Volvo";
+cars[2]= "BMW";
+
+const cars = new Array("Saab", "Volvo", "BMW");
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+
+
+JavaScript Sets
+
+// Create a Set
+const letters = new Set(["a","b","c"]);
+
+// Create a Set
+const letters = new Set();
+
+// Create Variables
+const a = "a";
+const b = "b";
+const c = "c";
+
+// Add Variables to the Set
+letters.add(a);
+letters.add(b);
+letters.add(c);
