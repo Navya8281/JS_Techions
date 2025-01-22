@@ -9,9 +9,11 @@
 <p>Otherwise it returns true.</p>
 
 <p id="demo"></p>
+<p id="demo1"></p>
 
 <script>
 document.getElementById("demo").innerHTML =isFinite(10 / 0) + "<br>" + isFinite(10 / 1);
+document.getElementById("demo1").innerHTML =isNaN("Hello") + "<br>" + isNaN("10");
 </script>
 
 </body>
