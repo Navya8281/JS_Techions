@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arrays</h1>
+<h2>The entries() method</h2>
+
+<p>entries() returns an Array Iterator object with key/value pairs:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const f = fruits.entries();
+
+for (let x of f) {
+  document.getElementById("demo").innerHTML += x + "<br>";
+  
+}
+const myArr = Array.from("ABCDEFG");
+  document.getElementById("demo1").innerHTML = myArr;
+  const keys = fruits.keys();
+
+let text = "";
+for (let y of keys) {
+  text += y + "<br>";
+}
+document.getElementById("demo2").innerHTML = text;
+
+const numbers = [4, 9, 16, 25, 29];
+let first = numbers.find(myFunction);
+let index = numbers.findIndex(myFunction);
+document.getElementById("demo3").innerHTML = "First number over 18 is " + first;
+document.getElementById("demo4").innerHTML = "First number over 18 is " + index;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+</script>
+
+
+</body>
+</html>
